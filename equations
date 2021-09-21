@@ -8,12 +8,12 @@ class ProblemSet1_A {
     public static void main (String[] args) {
         
     // Quadratic Formula       
-        final double a = 1; //a coefficient that is multiplied by x^2 on quadratic equation
-        final double b = 5; //b coefficient that is multiplied by x on quadratic equation
-        final double c = 6; //c cofficient that is a constant on quadratic equation
+        final double a = 1; //a coefficient that is multiplied by x^2 in quadratic equation
+        final double b = 5; //b coefficient that is multiplied by x in quadratic equation
+        final double c = 6; //c cofficient that is a constant in quadratic equation
         
-        double x = ((-1*b)+(Math.sqrt((Math.pow(b,2))-4*a*c)))/(2*a); // first answer for x
-        double xx = ((-1*b)-(Math.sqrt((Math.pow(b,2))-4*a*c)))/(2*a); // second answer for x
+        double x = ((-1*b)+(Math.sqrt((Math.pow(b,2))-4*a*c)))/(2*a); // value when square root is added in the quadratic formula
+        double xx = ((-1*b)-(Math.sqrt((Math.pow(b,2))-4*a*c)))/(2*a); // value when square root is substracted in the quadratic formula
        
         System.out.println ("Quadratic Formula");
         System.out.println ("The solutions for 1x^2 + 5x + 6 are: " + x + " and " + xx);
