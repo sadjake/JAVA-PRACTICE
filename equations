@@ -16,24 +16,31 @@ class ProblemSet1_A {
         double xx = ((-1*b)-(Math.sqrt((Math.pow(b,2))-4*a*c)))/(2*a);
        
         System.out.println ("Quadratic Formula");
-        System.out.println ("The solutions for 1x^2 + 5x + 6:" + x + " and " + xx);
+        System.out.println ("The solutions for 1x^2 + 5x + 6 are: " + x + " and " + xx);
     
     // Slope Formula
-        
-    // Variables
-        double x1;
-        double y1;
-        double x2;
-        double y2;
+        double x1 = 0;
+        double y1 = 0;
+        double x2 = 2;
+        double y2 = 3;
     
+        double s = (y2-y1)/(x2-x1); 
         
-        
-        
+        System.out.println ("Slope Formula");
+System.out.println ("The lines connecting the points (0,0) and (2,3) is: " + s );
     
     // Midpoint Formula
+        double xa = 0;
+        double ya = 0;
+        double xb = 2;
+        double yb = 3;
     
-    
-    
+        double mx = (xa+xb)/2;
+        double my = (ya+yb)/2;
+        
+        System.out.println ("Midpoint Formula");
+        System.out.println ("The midpoint between (0,0) and (2,3) is: " + "(" + mx + "," + my + ")");
+        
     // Sum of an Arithmetic Series
     
     
