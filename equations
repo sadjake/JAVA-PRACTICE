@@ -8,46 +8,58 @@ class ProblemSet1_A {
     public static void main (String[] args) {
         
     // Quadratic Formula       
-        final double a = 1;
-        final double b = 5;
-        final double c = 6;
+        final double a = 1; //a coefficient that is multiplied by x^2 on quadratic equation
+        final double b = 5; //b coefficient that is multiplied by x on quadratic equation
+        final double c = 6; //c cofficient that is a constant on quadratic equation
         
-        double x = ((-1*b)+(Math.sqrt((Math.pow(b,2))-4*a*c)))/(2*a);
-        double xx = ((-1*b)-(Math.sqrt((Math.pow(b,2))-4*a*c)))/(2*a);
+        double x = ((-1*b)+(Math.sqrt((Math.pow(b,2))-4*a*c)))/(2*a); // first answer for x
+        double xx = ((-1*b)-(Math.sqrt((Math.pow(b,2))-4*a*c)))/(2*a); // second answer for x
        
         System.out.println ("Quadratic Formula");
         System.out.println ("The solutions for 1x^2 + 5x + 6 are: " + x + " and " + xx);
     
     // Slope Formula
-        double x1 = 0;
-        double y1 = 0;
-        double x2 = 2;
-        double y2 = 3;
+        double x1 = 0; // point x1 (x1,y1)
+        double y1 = 0; // point y1 (x1,y1)
+        double x2 = 2; // point x2 (x2,y2)
+        double y2 = 3; // point y2 (x2,y2)
     
-        double s = (y2-y1)/(x2-x1); 
+        double s = (y2-y1)/(x2-x1); // value of slope
         
         System.out.println ("Slope Formula");
-System.out.println ("The lines connecting the points (0,0) and (2,3) is: " + s );
+System.out.println ("The lines connecting the points (0,0) and (2,3) has a slope of: " + s );
     
     // Midpoint Formula
-        double xa = 0;
-        double ya = 0;
-        double xb = 2;
-        double yb = 3;
+        double xa = 0; // point xa (xa, ya)
+        double ya = 0; // point ya (xa, ya)
+        double xb = 2; // point xb (xb, yb)
+        double yb = 3; // point yb (xb, yb)
     
-        double mx = (xa+xb)/2;
-        double my = (ya+yb)/2;
+        double mx = (xa+xb)/2; // midpoint of the x points
+        double my = (ya+yb)/2; // midpoint of the y points
         
         System.out.println ("Midpoint Formula");
         System.out.println ("The midpoint between (0,0) and (2,3) is: " + "(" + mx + "," + my + ")");
         
     // Sum of an Arithmetic Series
-    
-    
-    
+        double xi = 1; // the first term
+        double yi = 5; // the last term
+        double n = 5; // first 5 terms
+        
+        double A = n*((xi + yi)/2); // the sum of the arithmetic series
+        
+        System.out.println ("Sum of an Aritmetic Series");
+        System.out.println ("The sum of the first 5 terms of an aritmetic series that starts with 1.0 and increases by 1.0 is " + A );
+        
     // Sum of a Finite Geometric Series
+        double f = 3; //first term
+        double t = 3; //first 3 terms (number of terms)
+        double r = 2; //rate of 2
+        
+        double G = f*((1-(Math.pow(r,t)))/(1-r)); // sum of the finite geometric series
     
-    
+        System.out.println ("Sum of a Finite Geometric Series");
+        System.out.println ("The sum of the first 3 terms of a finite geometric series that starts with 3.0 and increases by a rate of 2.0 is: " + G );
         
     }
 }
