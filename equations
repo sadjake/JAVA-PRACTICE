@@ -7,7 +7,7 @@
 class ProblemSet1_A {
     public static void main (String[] args) {
         
-    // Quadratic Formula       
+    // Quadratic Formula : ax^2 + bx + c
         final double a = 1; //a coefficient that is multiplied by x^2 in quadratic equation
         final double b = 5; //b coefficient that is multiplied by x in quadratic equation
         final double c = 6; //c cofficient that is a constant in quadratic equation
@@ -17,17 +17,19 @@ class ProblemSet1_A {
        
         System.out.println ("Quadratic Formula");
         System.out.println ("The solutions for 1x^2 + 5x + 6 are: " + x + " and " + xx);
-    
+        System.out.println();
+        
     // Slope Formula
         double x1 = 0; // point x1 (x1,y1)
         double y1 = 0; // point y1 (x1,y1)
         double x2 = 2; // point x2 (x2,y2)
         double y2 = 3; // point y2 (x2,y2)
     
-        double s = (y2-y1)/(x2-x1); // value of slope
+        double s = (y2-y1)/(x2-x1); // slope value
         
         System.out.println ("Slope Formula");
 System.out.println ("The lines connecting the points (0,0) and (2,3) has a slope of: " + s );
+    System.out.println();
     
     // Midpoint Formula
         double xa = 0; // point xa (xa, ya)
@@ -40,21 +42,23 @@ System.out.println ("The lines connecting the points (0,0) and (2,3) has a slope
         
         System.out.println ("Midpoint Formula");
         System.out.println ("The midpoint between (0,0) and (2,3) is: " + "(" + mx + "," + my + ")");
+        System.out.println();
         
     // Sum of an Arithmetic Series
         double xi = 1; // the first term
-        double yi = 5; // the last term
-        double n = 5; // first 5 terms
+        double yi = 5; // the nth term (last term)
+        double n = 5; // first 5 terms/number of terms being added
         
-        double A = n*((xi + yi)/2); // the sum of the arithmetic series
+        double A = (n/2)*(xi + yi); // the sum of the arithmetic series
         
         System.out.println ("Sum of an Aritmetic Series");
         System.out.println ("The sum of the first 5 terms of an aritmetic series that starts with 1.0 and increases by 1.0 is " + A );
+        System.out.println();
         
     // Sum of a Finite Geometric Series
         double f = 3; //first term
         double t = 3; //first 3 terms (number of terms)
-        double r = 2; //rate of 2
+        double r = 2; //rate of 2 (common ratio)
         
         double G = f*((1-(Math.pow(r,t)))/(1-r)); // sum of the finite geometric series
     
